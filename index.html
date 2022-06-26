@@ -1,0 +1,239 @@
+﻿<!doctype html>
+<html>
+
+
+<head>
+  <title>Fortnite V-Bucks Chapter 3 Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="tailwind.min.css" rel="stylesheet">
+  <link href="nouislider.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  
+
+  <meta name="googlebot" content="noindex">
+<meta name="googlebot-news" content="nosnippet">
+
+
+  
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+<body>
+
+    <div class="container mx-auto min-h-screen w-full md:w-3/5 lg:w-1/2 text-center justify-center items-center flex flex-col">
+
+      <div class="w-full S1">
+
+
+
+
+        <p class="Burbank text-white text-lg md:text-2xl bg-black bg-opacity-50 w-11/12 mx-auto mt-2 CPOLYGON tracking-wide">Use our newest Generator and get  V-Bucks, Battle Pass and skins!</p>
+
+        <button type="button" class="w-4/5 text-4xl md:text-5xl TEST FORTNITE-GREEN-BG mt-2 tracking-wide uppercase" onclick="S1();">Continue</button>
+
+      </div>
+
+      <div class="w-full md:w-4/5 lg:w-2/3 min-h-screen text-center justify-center items-center flex flex-col S2 p-2 hidden">
+
+        <div class="patt"><div class="ern"></div></div>
+
+        <div class="API-1">
+
+          <h1 class="Burbank text-white text-3xl md:text-4xl italic mb-2">Enter your Fortnite username and select your platform:</h1>
+
+          <input type="text" class="w-11/12 CPOLYGON-2 Burbank text-2xl md:text-3xl FORTNITE-PINK-BG placeholder-white placeholder-opacity-75 text-white tracking-wide mb-2" id="FUSER" placeholder="Your username...">
+
+          <div class="grid grid-cols-6 w-full">
+
+            <div class="mx-1 cursor-pointer opacity-50 PL" onclick="PLATFORM(this);" id="Windows"><div class="CPOLYGON-3"><img class="w-full p-0.5 md:p-1 lg:p-2" src="img/platforms/windows.png"></div></div>
+            <div class="mx-1 cursor-pointer opacity-50 PL" onclick="PLATFORM(this);" id="psn"><div class="CPOLYGON-3"><img class="w-full p-0.5 md:p-1 lg:p-2" src="img/platforms/playstation.png"></div></div>
+            <div class="mx-1 cursor-pointer opacity-50 PL" onclick="PLATFORM(this);" id="xbl"><div class="CPOLYGON-3"><img class="w-full p-0.5 md:p-1 lg:p-2" src="img/platforms/xbox.png"></div></div>
+            <div class="mx-1 cursor-pointer opacity-50 PL" onclick="PLATFORM(this);" id="Android"><div class="CPOLYGON-3"><img class="w-full p-0.5 md:p-1 lg:p-2" src="img/platforms/android.png"></div></div>
+            <div class="mx-1 cursor-pointer opacity-50 PL" onclick="PLATFORM(this);" id="iPhone"><div class="CPOLYGON-3"><img class="w-full p-0.5 md:p-1 lg:p-2" src="img/platforms/ios.png"></div></div>
+            <div class="mx-1 cursor-pointer opacity-50 PL" onclick="PLATFORM(this);" id="Switch"><div class="CPOLYGON-3"><img class="w-full p-0.5 md:p-1 lg:p-2" src="img/platforms/switch.png"></div></div>
+
+          </div>
+
+          <button type="button" id="APIBUTTON" class="duration-500 w-4/5 text-4xl md:text-5xl FORTNITE-YELLOW-BG TEST mt-4 tracking-wide uppercase" onclick="FLICK();">Continue</button>
+
+        </div>
+
+        <div class="API-2 hidden">
+
+          <h1 class="Burbank text-white text-3xl md:text-4xl italic -mb-2">Is this your account?</h1>
+
+          <div class="SOLO w-full CPOLYGON-4">
+
+            <h2 class="Burbank text-white text-3xl md:text-4xl italic tracking-wide leading-none mb-2"><span id="USERUSER"></span><small class="opacity-80 ml-1" id="PLPL"></small></h2>
+
+            <div class="grid grid-cols-2 w-full">
+
+              <div class="mb-2">
+
+                <h2 class="Burbank text-white text-2xl italic tracking-wide opacity-80 -mb-1">Matches</h2>
+                <h1 class="Burbank text-white text-4xl tracking-wide" id="MATCHES"></h1>
+
+              </div>
+
+              <div class="mb-2">
+
+                <h2 class="Burbank text-white text-2xl italic tracking-wide opacity-80 -mb-1">Kills</h2>
+                <h1 class="Burbank text-white text-4xl tracking-wide" id="KILLS"></h1>
+
+              </div>
+
+              <div class="">
+
+                <h2 class="Burbank text-white text-2xl italic tracking-wide opacity-80 -mb-1">Winrate</h2>
+                <h1 class="Burbank text-white text-4xl tracking-wide" id="WINRATE"></h1>
+
+              </div>
+
+              <div class="">
+
+                <h2 class="Burbank text-white text-2xl italic tracking-wide opacity-80 -mb-1">K/D Ratio</h2>
+                <h1 class="Burbank text-white text-4xl tracking-wide" id="KDRATIO"></h1>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <button type="button" class="w-full text-4xl md:text-5xl FORTNITE-YELLOW-BG TEST mt-2 tracking-wide uppercase VBB" onclick="S5();">Yes, continue</button>
+
+        </div>
+
+        <div class="VBUCKS hidden">
+
+          <h1 class="Burbank text-white text-3xl md:text-4xl mb-3 italic">Select how much V-Bucks you want to get</h1>
+
+          <div id="VB" class="mx-auto w-11/12 my-2"></div>
+          <h2 class="Burbank text-white text-4xl md:text-5xl mt-4 italic" id="VBa"></h2>
+
+          <div class="w-full flex lg:h-auto" id="VBP">
+            <img src="img/left-vbucks.png" class="absolute duration-500 right-0 VBF lg:top-1/3">
+            <img src="img/right-vbucks.png" class="absolute duration-500 left-0 VBF lg:top-1/3">
+          </div>
+
+          <button type="button" class="w-4/5 text-4xl md:text-5xl FORTNITE-YELLOW-BG TEST mt-4 tracking-wide uppercase VBB" onclick="S3();">Continue</button>
+
+        </div>
+      
+        <div class="SKINS hidden">
+
+          <h1 class="Burbank text-white text-3xl md:text-4xl mb-2 italic">Select which skins you want to get</h1>
+
+          <div class="grid grid-cols-4 w-full">
+
+		   <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Darth Vader"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Darth_Vader.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Darth Vader </h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Evie"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Evie.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Evie</h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Adira"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Adira.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Adira</h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Indiana Jones"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Indiana_Jones.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Indiana Jones</h5></div>
+
+
+
+
+
+		   <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Malik"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Malik.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Malik</h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Sabina"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Sabina.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Sabina</h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Snap"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/SNAP.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">SNAP</h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Stormfarer"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Stormfarer.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Stormfarer</h5></div>
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Obi-Wan Kenobi"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Obi-Wan-Kenobi.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Obi-Wan Kenobi</h5></div>
+
+
+		  
+		   <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Moon Knight Skin"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Moon_Knight_Skin.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Moon Knight </h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Spider-Man (No Way Home) Skin"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Spider-Man.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Spider-Man (No Way Home) </h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="SCARLET WITCH WANDA "><img class="w-full rounded-full border-2 border-transparent" src="img/skins/SCARLET_WITCH.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">SCARLET WITCH WANDA </h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="Doctor Strange"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/Doctor_Strange.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Doctor Strange</h5></div>
+
+      
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="guggimon"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/guggimon.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Guggimon</h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="joey"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/joey.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Joey</h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="zyg-choppy"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/zyg-choppy.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Shanta</h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="slone"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/slone.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Doctor Slone</h5></div>
+
+           
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="superman"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/superman.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Superman</h5></div>
+			
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="ricksanchez"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/gumbo.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Gumbo</h5></div>
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="superman"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/reina.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Reina</h5></div>
+			
+         
+
+            <div class="m-1 cursor-pointer SK opacity-50 z-50" onclick="SKIN(this);" id="superman"><img class="w-full rounded-full border-2 border-transparent" src="img/skins/swish.png"><h5 class="mt-1 leading-none text-sm Burbank text-white tracking-wide">Swish</h5></div>
+			
+
+          </div>
+
+          <button type="button" class="w-4/5 text-4xl md:text-5xl FORTNITE-YELLOW-BG TEST mt-4 tracking-wide uppercase" onclick="S4();">Continue</button>
+
+        </div>
+
+        <div class="SUMMARY w-full hidden">
+
+          <h1 class="Burbank text-white text-5xl md:text-6xl tracking-wide -mb-4 LAST">Summary:</h1>
+
+          <div class="SOLO w-full CPOLYGON-5">
+
+            <h2 class="leading-none Burbank text-black text-3xl tracking-wide mb-1"><span class="opacity-80">Account:</span><br><big class="italic big-3" id="SSUSER"></big></h2>
+
+
+
+            <h2 class="leading-none Burbank text-black text-3xl tracking-wide mb-1"><span class="opacity-80">Selected V-Bucks:</span><br><big class="italic" id="SSVB">13500</big></h2>
+
+            <h2 class="leading-none Burbank text-black text-3xl tracking-wide mb-1 SSS"><span class="opacity-80">Selected Skins:</span><br><big class="italic big-2" id="SS"></big></h2>
+
+          </div>
+
+          <button type="button" class="w-4/5 md:w-full text-4xl md:text-5xl TEST FORTNITE-GREEN-BG mt-2 tracking-wide uppercase LAST" onclick="LAST();">Continue</button>
+
+          <p class="Burbank text-white text-lg md:text-2xl bg-black bg-opacity-50 w-full mx-auto mt-2 CPOLYGON-6 tracking-wide hidden VER">You are almost done with the generation process. Please complete the last step by clicking the button below. Verification won't take more than few minutes.</p>
+
+          <button type="button" class="w-4/5 md:w-full text-4xl md:text-5xl TEST FORTNITE-GREEN-BG mt-2 tracking-wide uppercase hidden VER" onclick="window.location.href='https://verifyhub.net/9330191'">Verify</button>  
+
+
+        </div>
+
+      </div>
+
+      <div class="w-full min-h-screen text-center justify-center items-center flex flex-col S3 p-2 hidden">
+
+        <h1 class="Burbank text-black italic uppercase">Summary</h1>
+
+        <button type="button" class="w-4/5 text-4xl md:text-5xl FORTNITE-GREEN-BG TEST mt-4 tracking-wide uppercase" onclick="S1();">Continue</button>
+
+      </div>
+
+    </div>
+
+  
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="nouislider.js"></script>
+    <script src="main-2.js"></script>
+
+
+</body>
+
+</html>
